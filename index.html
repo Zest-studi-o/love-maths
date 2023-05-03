@@ -21,17 +21,21 @@
     </h1>
 
     <div class="game-area">
-        <button class="btn btn--big btn--green"></button>
-        <i class="fa   s fa-plus></i>
+        <button data-type="addition" class="btn btn--big btn--green">
+            <i class="fas fa-plus"></i>
+        </button>
 
-    <button class=" btn btn--big btn--blue"></button>
-            <i class="fas fa-minus"> </i>
+        <button data-type="subtract" class="btn btn--big btn--blue">
+            <i class="fas fa-minus"></i>
+        </button>
 
-            <button class="btn btn--big btn--orange"></button>
-            <i class="fa   s fa-tme"></i>
+        <button data-type="multiply" class="btn btn--big btn--orange">
+            <i class="fas fa-times"></i>
+        </button>
 
-            <button class="btn btn--big btn--red"></bu ton>
-                <i class="fas fa-divide"></i>
+        <button data-type="division" class="btn btn--big btn--red">
+            <i class="fas fa-divide"></i>
+        </button>
     </div>
 
     <div class="question-area">
@@ -42,7 +46,8 @@
         <p class="answer-message">Enter message:</p>
         <input id="answer-box" type="number">
     </div>
-    <button class="btn btn--gray">Submit answer</button>
+    <button data-type="submit" class="btn btn--gray">Submit answer</button>
+
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
